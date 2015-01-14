@@ -1,0 +1,102 @@
+<div class="feed">
+  <form method="POST" action="/reviews">
+
+    <label>
+      User Name
+      <input type="text" name="user_name" size="50"/>
+    </label>
+
+    <label>
+      Restaurant Name
+      <input type="text" name="res_name" size="50"/>
+    </label>
+
+    <label>
+      Restaurant Address
+      <input type="text" name="res_address" size="50"/>
+    </label>
+
+    <label>
+      Restaurant/Food Image (optional)
+      <input type="url" name="res_image" size="50"/>
+    </label>
+
+<!-- Review -->
+
+      <label>
+      Review
+      <textarea name="text" cols="50" rows="8"></textarea>
+    </label>
+
+
+    <label>
+      Tags (optional)
+      <input type="text" name="tags" size="50"/>
+    </label>
+
+<!--     <label>
+      <strong>Author's Email</strong>
+      <input type="email" name="author_email" size="50"/>
+    </label> -->
+
+    <label>
+      Date Visited (optional)
+      <input type="date" name="res_date" value="<%= Date.today %>" style="text-align:center;"/>
+    </label>
+
+<!-- Ratings -->
+    <ul>
+      <li>
+      <label> Food Quality:
+      <input type="radio" name="quality" value="1"/>1
+      <input type="radio" name="quality" value="2"/>2
+      <input type="radio" name="quality" value="3"/>3
+      <input type="radio" name="quality" value="4"/>4
+      <input type="radio" name="quality" value="5"/>5
+      </label>
+      </li>
+
+      <li>
+      <label> Price:
+      <input type="radio" name="price" value="1"/>$
+      <input type="radio" name="price" value="2"/>$$
+      <input type="radio" name="price" value="3"/>$$$
+      <input type="radio" name="price" value="4"/>$$$$
+      </label>
+      </li>
+
+      <li>
+      <label> Atmosphere:
+      <input type="radio" name="atmosphere" value="1"/>1
+      <input type="radio" name="atmosphere" value="2"/>2
+      <input type="radio" name="atmosphere" value="3"/>3
+      <input type="radio" name="atmosphere" value="4"/>4
+      <input type="radio" name="atmosphere" value="5"/>5
+      </label>
+      </li>
+
+      <li>
+      <label> Service:
+      <input type="radio" name="service" value="1"/>1
+      <input type="radio" name="service" value="2"/>2
+      <input type="radio" name="service" value="3"/>3
+      <input type="radio" name="service" value="4"/>4
+      <input type="radio" name="service" value="5"/>5
+      </label>
+      </li>
+
+
+
+
+
+
+
+
+    <label>
+      Deals:
+      <input type="text" name="deals" size="50"/>
+    </label>
+
+    <button>Add Review!</button>
+  </form>
+</div>
