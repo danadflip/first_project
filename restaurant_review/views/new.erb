@@ -1,102 +1,107 @@
-<div class="feed">
-  <form method="POST" action="/reviews">
-
-    <label>
-      User Name
-      <input type="text" name="user_name" size="50"/>
-    </label>
-
+<form method="POST" action="/reviews">
+  <fieldset class="restaurant-info">
     <label>
       Restaurant Name
-      <input type="text" name="res_name" size="50"/>
-    </label>
-
-    <label>
-      Restaurant Address
-      <input type="text" name="res_address" size="50"/>
+      <input type="text" name="res_name" size="30"/><br>
     </label>
 
     <label>
       Restaurant/Food Image (optional)
-      <input type="url" name="res_image" size="50"/>
+      <input type="url" name="res_image" size="30"/><br>
     </label>
+
+
+    <label>Neighborhood
+      <select id="reviews" name="neighborhood">
+        <optgroup label="Manhattan">
+      <!-- TODO: Move Nabes to populate programatically -->
+      <!-- @nabes.each do |nabe| %> etc.. -->
+          <option value="Upper West Side" name="upper_west_side">Upper West Side</option>
+          <option value="upper_east_side" name="neighborhood">Upper East Side</option>
+        </optgroup>
+        <optgroup label="Brooklyn">
+          <option value="1" name = "neighborhood">Williamsburg</option>
+          <option value="park_slope" name ="neighborhood">Park Slope</option>
+        </optgroup>
+      </select>
+    </label>
+
+
+  </fieldset>
 
 <!-- Review -->
-
-      <label>
-      Review
-      <textarea name="text" cols="50" rows="8"></textarea>
+  <fieldset class="review">
+    <label>
+      User Name
+      <input type="text" name="user_name" size="30"/><br>
     </label>
-
-
+    <label>
+      Review
+      <textarea name="review" cols="30" rows="5"></textarea><br>
+    </label>
     <label>
       Tags (optional)
-      <input type="text" name="tags" size="50"/>
+      <input type="text" name="tags" size="30"/><br>
     </label>
-
-<!--     <label>
-      <strong>Author's Email</strong>
-      <input type="email" name="author_email" size="50"/>
-    </label> -->
 
     <label>
       Date Visited (optional)
-      <input type="date" name="res_date" value="<%= Date.today %>" style="text-align:center;"/>
+      <input type="date" name="res_date" value="<%= Date.today %>" style="text-align:center;"/><br>
     </label>
+  </fieldset>
 
 <!-- Ratings -->
-    <ul>
-      <li>
-      <label> Food Quality:
-      <input type="radio" name="quality" value="1"/>1
-      <input type="radio" name="quality" value="2"/>2
-      <input type="radio" name="quality" value="3"/>3
-      <input type="radio" name="quality" value="4"/>4
-      <input type="radio" name="quality" value="5"/>5
-      </label>
-      </li>
-
-      <li>
-      <label> Price:
-      <input type="radio" name="price" value="1"/>$
-      <input type="radio" name="price" value="2"/>$$
-      <input type="radio" name="price" value="3"/>$$$
-      <input type="radio" name="price" value="4"/>$$$$
-      </label>
-      </li>
-
-      <li>
-      <label> Atmosphere:
-      <input type="radio" name="atmosphere" value="1"/>1
-      <input type="radio" name="atmosphere" value="2"/>2
-      <input type="radio" name="atmosphere" value="3"/>3
-      <input type="radio" name="atmosphere" value="4"/>4
-      <input type="radio" name="atmosphere" value="5"/>5
-      </label>
-      </li>
-
-      <li>
-      <label> Service:
-      <input type="radio" name="service" value="1"/>1
-      <input type="radio" name="service" value="2"/>2
-      <input type="radio" name="service" value="3"/>3
-      <input type="radio" name="service" value="4"/>4
-      <input type="radio" name="service" value="5"/>5
-      </label>
-      </li>
-
-
-
-
-
-
-
-
-    <label>
-      Deals:
-      <input type="text" name="deals" size="50"/>
+  <fieldset class="ratings">
+    <label> Food Quality:
+      <ul>
+        <li><input type="radio" name="quality" value="*"/>1</li>
+        <li><input type="radio" name="quality" value="**"/>2</li>
+        <li><input type="radio" name="quality" value="***"/>3</li>
+        <li><input type="radio" name="quality" value="****"/>4</li>
+        <li><input type="radio" name="quality" value="*****"/>5</li>
+      </ul>
     </label>
 
-    <button>Add Review!</button>
-  </form>
-</div>
+    <label> Price:
+    <ul>
+      <li><input type="radio" name="price" value="$"/>$</li>
+      <li><input type="radio" name="price" value="$$"/>$$</li>
+      <li><input type="radio" name="price" value="$$$"/>$$$</li>
+      <li><input type="radio" name="price" value="$$$$"/>$$$$</li>
+    </ul>
+    </label>
+
+
+
+    <label> Atmosphere:
+      <ul>
+        <li><input type="radio" name="atmosphere" value="*"/>1</li>
+        <li><input type="radio" name="atmosphere" value="**"/>2</li>
+        <li><input type="radio" name="atmosphere" value="***"/>3</li>
+        <li><input type="radio" name="atmosphere" value="****"/>4</li>
+        <li><input type="radio" name="atmosphere" value="*****"/>5</li>
+      </ul>
+    </label>
+
+    <label> Service:
+      <ul>
+        <li><input type="radio" name="service" value="*"/>1</li>
+        <li><input type="radio" name="service" value="**"/>2</li>
+        <li><input type="radio" name="service" value="***"/>3</li>
+        <li><input type="radio" name="service" value="****"/>4</li>
+        <li><input type="radio" name="service" value="*****"/>5</li>
+      </ul>
+    </label>
+  </fieldset>
+
+<!-- Deals -->
+<fieldset class="deals">
+  <label>
+    Deals:
+    <input type="text" name="deals" size="30"/>
+  </label>
+</fieldset>
+
+
+  <button>Add Review!</button>
+</form>

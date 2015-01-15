@@ -1,0 +1,24 @@
+<ul>
+  <% @neighborhood.each_with_index do |review,id| %>
+  <li class="review">
+    <div class="restaurant-info">
+        <p>Restaurant Name: <%= review["res_name"] %></p>
+        <img src="<%= review["res_image"]%>">
+        <p>Restaurant Neighborhood: <a href="/reviews/n/<%= review["neighborhood"]%>"><%= review["neighborhood"]%></a></p>
+        <p>Tags: <%= review["tags"] %></p>
+    </div>
+    <div class="user-info">
+        <p>User Name: <%= review["user_name"] %> </p>
+        <p>Review: <%= review["review"] %> </p>
+        <p>Date Visited: <%= review["res_date"] %> </p>
+    </div>
+    <ul class="ratings">
+        <li>Quality (out of 5): <%= review["quality"] %> </li>
+        <li>Price (out of $$$$): <%= review["price"] %> </li>
+        <li>Atmosphere (out of 5): <%= review["atmosphere"] %> </li>
+        <li>Service (out of 5): <%= review["service"] %> </li>
+        <li>Deals: <%= review["deals"] %> </li>
+    </ul>
+    <% end %>
+  </li>
+</ul>
