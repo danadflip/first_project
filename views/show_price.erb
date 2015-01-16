@@ -1,5 +1,5 @@
 <ul>
-  <% @reviews.each_with_index do |review,id| %>
+  <% @price.each_with_index do |review,id| %>
   <li class="review">
     <div class="restaurant-info">
         <p>Restaurant Name: <%= review["res_name"] %></p>
@@ -14,11 +14,13 @@
     </div>
     <ul class="ratings">
         <li>Quality (out of 5): <%= review["quality"] %> </li>
-        <li>Price (out of $$$$): <%= review["price"] %> </li>
+        <li>Price: <a href="/reviews/n/<%= review["price"]%>"><%= review["price"]%></a></li>
         <li>Atmosphere (out of 5): <%= review["atmosphere"] %> </li>
         <li>Service (out of 5): <%= review["service"] %> </li>
-        <li>Deals: <%= review["deals"] %> </li>
     </ul>
+    <div class = "deals">
+        <p>Deals: <%= review["deals"] %></p>
+    </div>
     <% end %>
   </li>
 </ul>
