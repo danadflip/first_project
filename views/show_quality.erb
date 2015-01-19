@@ -1,18 +1,12 @@
-
-<% @neighborhood.each_with_index do |review,id| %>
-<h3>Neighborhood: <%= review["neighborhood"]%></h3>
-
-<%end%>
-
+<h3>Food Quality</h3>
 <ul>
-  <% @neighborhood.each_with_index do |review,id| %>
-
+  <% @quality.each_with_index do |review,id| %>
   <li class="review">
     <div class="date">
     <!-- maybe add the date -->
     </div>
     <div class="restaurant-info">
-        <p>Restaurant Name: <a href="/reviews/r/<%= review["restaurant"]%>"><%= review["restaurant"]%></a></p>
+        <p>Restaurant Name: <%= review["restaurant"]%></p>
         <img src="<%= review["res_image"]%>">
         <p>Restaurant Neighborhood: <a href="/reviews/n/<%= review["neighborhood"]%>"><%= review["neighborhood"]%></a></p>
         <p>Tags: <a href="/reviews/t/<%= review["tags"]%>"><%= review["tags"]%></a></p>

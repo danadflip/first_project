@@ -1,27 +1,40 @@
-<ul>
-  <% @reviews.each_with_index do |review,id| %>
-  <li class="review">
-    <div class="restaurant-info">
-        <p>Restaurant Name: <%= review["res_name"] %></p>
-        <img src="<%= review["res_image"]%>">
-        <p>Restaurant Neighborhood: <a href="/reviews/n/<%= review["neighborhood"]%>"><%= review["neighborhood"]%></a></p>
-        <p>Tags: <%= review["tags"] %></p>
-    </div>
-    <div class="user-info">
-        <p>User Name: <%= review["user_name"] %> </p>
-        <p>Review: <%= review["review"] %> </p>
-        <p>Date Visited: <%= review["res_date"] %> </p>
-    </div>
-    <ul class="ratings">
-        <li>Quality (out of 5): <%= review["quality"] %> </li>
-        <li>Price: <a href="/reviews/n/<%= review["price"]%>"><%= review["price"]%></a></li>
-        <li>Atmosphere (out of 5): <%= review["atmosphere"] %> </li>
-        <li>Service (out of 5): <%= review["service"] %> </li>
-    </ul>
-    <div class = "deals">
-      <p>Deals: <%= review["deals"] %></p>
-    </div>
 
-    <% end %>
-  </li>
-</ul>
+  <div class= "cheese">
+    <ul>
+      <% @reviews.each_with_index do |review,id| %>
+      <li class="review">
+
+        <div class="restaurant-info">
+            <p> <a href="/reviews/r/<%= review["restaurant"]%>"><%= review["restaurant"]%></a></p>
+            <img src="<%= review["res_image"]%>">
+            <p>Restaurant Neighborhood: <a href="/reviews/n/<%= review["neighborhood"]%>"><%= review["neighborhood"]%></a></p>
+            <p>Tags: <a href="/reviews/t/<%= review["tags"]%>"><%= review["tags"]%></a></p>
+        </div>
+
+        <div class="user-info">
+            <p>Reviewer Name: <a href="/reviews/u/<%= review["user_name"]%>"><%= review["user_name"]%></a></p>
+            <p>Review: <%= review["review"] %> </p>
+            <p>Date Visited: <%= review["res_date"] %> </p>
+        </div>
+
+        <div class="rating">Rating:
+        <ul class="ratings">
+            <li>Quality (out of 5): <a href="/reviews/q/<%= review["quality"]%>"><%= review["quality"]%></a></li>
+            <li>Atmosphere (out of 5): <%= review["atmosphere"] %> </li>
+            <li>Service (out of 5): <%= review["service"] %> </li>
+            <li>Price: <a href="/reviews/p/<%= review["price"]%>"><%= review["price"]%></a></li>
+        </ul>
+        </div>
+
+        <div class = "deals">
+          <p>Deals: <%= review["deals"] %></p>
+        </div>
+
+        <% end %>
+      </li>
+    </ul>
+  </div>
+
+
+</body>
+</html>

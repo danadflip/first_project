@@ -1,8 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Reviews</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+  <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/stylesheets/style_new.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+
+<!--   <header>
+    <div class = "logo">
+      <h2>Students Like Food Too!</h2>
+    </div>
+    <div class = "links">
+      <a href="/">Reviews</a>
+      <a href="/reviews/new">Add New Review!</a>
+    </div>
+  </header> -->
+
+
+
+<div class = "form">
 <form method="POST" action="/reviews">
+  <h2>New Review</h2>
   <fieldset class="restaurant-info">
     <label>
       Restaurant Name
-      <input type="text" name="res_name" size="30"/><br>
+      <input type="text" name="restaurant" size="30"/><br>
     </label>
 
     <label>
@@ -52,7 +83,6 @@
           <option value="Prospect Heights" name = "neighborhood">Prospect Heights</option>
           <option value="Flatbush" name = "neighborhood">Flatbush</option>
           <option value="Bushwick" name = "neighborhood">Bushwick</option>
-
         </optgroup>
       </select>
     </label>
@@ -63,7 +93,7 @@
 <!-- Review -->
   <fieldset class="review">
     <label>
-      User Name
+      Name
       <input type="text" name="user_name" size="30"/><br>
     </label>
     <label>
@@ -82,17 +112,10 @@
   </fieldset>
 
 <!-- Ratings -->
+ <p>Ratings:</p>
   <fieldset class="ratings">
-    <label> Food Quality:
-      <ul>
-        <li><input type="radio" name="quality" value="*"/>1</li>
-        <li><input type="radio" name="quality" value="**"/>2</li>
-        <li><input type="radio" name="quality" value="***"/>3</li>
-        <li><input type="radio" name="quality" value="****"/>4</li>
-        <li><input type="radio" name="quality" value="*****"/>5</li>
-      </ul>
-    </label>
-
+     <!-- <div class = "rating_div"> -->
+    <div class = "prices">
     <label> Price:
     <ul>
       <li><input type="radio" name="price" value="$"/>$</li>
@@ -101,31 +124,47 @@
       <li><input type="radio" name="price" value="$$$$"/>$$$$</li>
     </ul>
     </label>
+  </div>
 
+    <div class = "qualities">
+    <label> Food Quality:
+      <ul>
+        <li><input type="radio" name="quality" value="1"/>1</li>
+        <li><input type="radio" name="quality" value="2"/>2</li>
+        <li><input type="radio" name="quality" value="3"/>3</li>
+        <li><input type="radio" name="quality" value="4"/>4</li>
+        <li><input type="radio" name="quality" value="5"/>5</li>
+      </ul>
+    </label>
+    </div>
 
-
+<div class = "atmospheres">
+  <!-- <div class = "rating_div2"> -->
     <label> Atmosphere:
       <ul>
-        <li><input type="radio" name="atmosphere" value="*"/>1</li>
-        <li><input type="radio" name="atmosphere" value="**"/>2</li>
-        <li><input type="radio" name="atmosphere" value="***"/>3</li>
-        <li><input type="radio" name="atmosphere" value="****"/>4</li>
-        <li><input type="radio" name="atmosphere" value="*****"/>5</li>
+        <li><input type="radio" name="atmosphere" value="1"/>1</li>
+        <li><input type="radio" name="atmosphere" value="2"/>2</li>
+        <li><input type="radio" name="atmosphere" value="3"/>3</li>
+        <li><input type="radio" name="atmosphere" value="4"/>4</li>
+        <li><input type="radio" name="atmosphere" value="5"/>5</li>
       </ul>
     </label>
+  </div>
 
+  <div class = "services">
     <label> Service:
       <ul>
-        <li><input type="radio" name="service" value="*"/>1</li>
-        <li><input type="radio" name="service" value="**"/>2</li>
-        <li><input type="radio" name="service" value="***"/>3</li>
-        <li><input type="radio" name="service" value="****"/>4</li>
-        <li><input type="radio" name="service" value="*****"/>5</li>
+        <li><input type="radio" name="service" value="1"/>1</li>
+        <li><input type="radio" name="service" value="2"/>2</li>
+        <li><input type="radio" name="service" value="3"/>3</li>
+        <li><input type="radio" name="service" value="4"/>4</li>
+        <li><input type="radio" name="service" value="5"/>5</li>
       </ul>
     </label>
-  </fieldset>
 
+  </div>
 </fieldset>
+
 
 <!-- Deals -->
 <fieldset class="deals">
@@ -138,3 +177,13 @@
 
   <button>Add Review!</button>
 </form>
+</div>
+
+
+  <footer>
+    <a href="/">Reviews</a>
+    <a href="/reviews/new">Add New Review!</a>
+  </footer>
+
+</body>
+</html>

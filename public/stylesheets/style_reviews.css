@@ -45,16 +45,6 @@ a {
   padding: 10px;
 }
 a:hover{
-  color: white;
-  text-decoration: underline;
-}
-
-h1{
-  font-family: 'Covered By Your Grace', cursive;
-}
-
-h3{
-  text-align: center;
-  font-family: 'Covered By Your Grace', cursive;
-  font-size: 250%;
+  color: red;
+  text-decoration: none;
 }

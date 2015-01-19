@@ -1,12 +1,5 @@
-
-<% @neighborhood.each_with_index do |review,id| %>
-<h3>Neighborhood: <%= review["neighborhood"]%></h3>
-
-<%end%>
-
 <ul>
-  <% @neighborhood.each_with_index do |review,id| %>
-
+  <% @user_name.each_with_index do |review,id| %>
   <li class="review">
     <div class="date">
     <!-- maybe add the date -->
@@ -29,8 +22,9 @@
         <li>Service (out of 5): <%= review["service"] %> </li>
     </ul>
     <div class = "deals">
-        <p>Deals: <%= review["deals"] %></p>
+      <p>Deals: <%= review["deals"] %></p>
     </div>
+
     <% end %>
   </li>
 </ul>

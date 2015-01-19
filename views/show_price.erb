@@ -1,20 +1,24 @@
+<h3>Price</h3>
 <ul>
   <% @price.each_with_index do |review,id| %>
   <li class="review">
+    <div class="date">
+    <!-- maybe add the date -->
+    </div>
     <div class="restaurant-info">
-        <p>Restaurant Name: <%= review["res_name"] %></p>
+        <p>Restaurant Name: <a href="/reviews/r/<%= review["restaurant"]%>"><%= review["restaurant"]%></a></p>
         <img src="<%= review["res_image"]%>">
         <p>Restaurant Neighborhood: <a href="/reviews/n/<%= review["neighborhood"]%>"><%= review["neighborhood"]%></a></p>
-        <p>Tags: <%= review["tags"] %></p>
+        <p>Tags: <a href="/reviews/t/<%= review["tags"]%>"><%= review["tags"]%></a></p>
     </div>
     <div class="user-info">
-        <p>User Name: <%= review["user_name"] %> </p>
+        <p>Name: <a href="/reviews/u/<%= review["user_name"]%>"><%= review["user_name"]%></a></p>
         <p>Review: <%= review["review"] %> </p>
         <p>Date Visited: <%= review["res_date"] %> </p>
     </div>
     <ul class="ratings">
-        <li>Quality (out of 5): <%= review["quality"] %> </li>
-        <li>Price: <a href="/reviews/n/<%= review["price"]%>"><%= review["price"]%></a></li>
+        <li>Quality: <a href="/reviews/q/<%= review["quality"]%>"><%= review["quality"]%></a></li>
+        <li>Price: <a href="/reviews/p/<%= review["price"]%>"><%= review["price"]%></a></li>
         <li>Atmosphere (out of 5): <%= review["atmosphere"] %> </li>
         <li>Service (out of 5): <%= review["service"] %> </li>
     </ul>
