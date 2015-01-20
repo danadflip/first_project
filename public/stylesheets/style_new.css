@@ -31,6 +31,7 @@ nav{
    margin-left: 7em;
   margin-top: 1em;
   color:white;
+  font-family: 'Kreon', serif;
 }
 
 .menu li{
@@ -41,12 +42,14 @@ nav{
 }
 
 .menu a{
-  color: white
+  color: white;
+  font-family: 'Kreon', serif;
 }
 
 .menu a:hover{
   color: black;
   font-weight: bolder;
+  font-family: 'Kreon', serif;
 }
 
 h1{
@@ -70,6 +73,7 @@ footer{
   padding:.5em;
   text-decoration: none;
   font-size: 19px;
+  font-family: 'Kreon', serif;
 }
 .footer a{
   color:white;

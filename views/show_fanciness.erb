@@ -1,7 +1,7 @@
-<h3>Neighborhood</h3>
+<h3>Fanciness</h3>
 
 <ul>
-  <% @neighborhood.each_with_index do |review,id| %>
+  <% @fanciness.each_with_index do |review,id| %>
 
   <li class="review">
     <div class="date">
@@ -18,14 +18,12 @@
         <p>Review: <%= review["review"] %> </p>
         <p>Date Visited: <%= review["res_date"] %> </p>
     </div>
-    <div class="rating">Rating:
-        <ul class="ratings">
-            <li>Price: <a href="/reviews/p/<%= review["price"]%>"><%= review["price"]%></a></li>
-            <li>Quality (out of 5): <a href="/reviews/q/<%= review["quality"]%>"><%= review["quality"]%></a></li>
-            <li>Atmosphere (out of 5): <%= review["atmosphere"] %> </li>
-            <li>Service (out of 5): <%= review["service"] %> </li>
-        </ul>
-    </div>
+    <ul class="ratings">
+        <li>Quality: <a href="/reviews/q/<%= review["quality"]%>"><%= review["quality"]%></a></li>
+        <li>Price: <a href="/reviews/p/<%= review["price"]%>"><%= review["price"]%></a></li>
+        <li>Atmosphere (out of 5): <%= review["atmosphere"] %> </li>
+        <li>Service (out of 5): <%= review["service"] %> </li>
+    </ul>
     <div class = "deals">
         <p>Deals: <%= review["deals"] %></p>
     </div>
