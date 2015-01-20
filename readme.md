@@ -28,8 +28,8 @@
 
 - Run git clone
 
-`$ git clone git@github.com:danadflip/first_project.git`
-`$ cd project_one`
+```$ git clone git@github.com:danadflip/first_project.git
+$ cd project_one```
 
 - Run Redis-Server & Rackup
 
