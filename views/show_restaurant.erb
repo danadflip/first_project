@@ -27,6 +27,12 @@
 
 
 
+<!--delete button-->
+<form method="post" action="/reviews/r/<%= @review["rest_id[0]"] %>">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Delete">
+      </form>
+
 
 
     <% end %>

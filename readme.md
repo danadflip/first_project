@@ -4,7 +4,7 @@
 
 
 ## Project Idea:
-- Create a blog where different users can post reviews of restaurants.  These posts contain written reviews, ratings based on quality, price, atmosphere, and service.  They feature a section where the reviewer can write the deals of the restaurant.
+Create a blog where different users can post reviews of restaurants.  These posts contain written reviews, ratings based on quality, price, atmosphere, and service.  They feature a section where the reviewer can write the deals of the restaurant.
 
 ## User Stories:
 
@@ -28,8 +28,9 @@
 
 - Run git clone
 
-```$ git clone git@github.com:danadflip/first_project.git
-$ cd project_one```
+```$ git clone git@github.com:danadflip/first_project.git```
+
+```$ cd project_one```
 
 - Run Redis-Server & Rackup
 
