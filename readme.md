@@ -1,4 +1,4 @@
-# Students Like Food Too! - Project 1
+# Foodie on a Budget! - Project 1
 
 ![:image](http://restaurants.thebusinessrank.com/wp-content/uploads/2014/09/resasss.jpg)
 

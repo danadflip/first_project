@@ -97,7 +97,8 @@ footer{
 
 img{
   /*margin: 40px 0px 0px 0px;*/
-  max-height: 400px;
+  /*max-height: 400px;*/
+  max-width: 600px;
   border: 7px solid white;
   border-radius: 20px;
   position: relative;
