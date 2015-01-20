@@ -27,7 +27,7 @@
 ##How to Run Application Locally:
 
 - Run git clone
-/code
-$ git clone git@github.com:sarahmcalear/project_one.git
-$ cd project_one
+
+`$ git clone git@github.com:danadflip/project_one.git
+$ cd project_one`
 
