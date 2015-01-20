@@ -50,7 +50,7 @@ nav{
 }
 
 h1{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Shadows Into Light Two', cursive;
   /*font-family: 'Covered By Your Grace', cursive;*/
   color:white;
 }
@@ -96,6 +96,7 @@ width: 650px;
   position: relative;
 
   text-align: left;
+  font-family: 'Kreon', serif;
 }
 
 button{
@@ -136,6 +137,7 @@ a:hover{
   background: white ;
   border: 7px solid white;
   border-radius: 20px;
+  font-family: 'Kreon', serif;
 }
 
 .services{
@@ -155,11 +157,29 @@ li{
 
 
 h2{
-  text-align: center
+  text-align: center;
+  font-family: 'Kreon', serif;
 }
 
 p{
-  text-align: center
+  text-align: center;
+  font-family: 'Kreon', serif;
+}
+
+
+
+.rating{
+    /*font-family: 'Raleway', sans-serif;*/
+  /*font-family: 'Droid Serif', serif;*/
+
+/*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Cabin', sans-serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*font-family: 'Kreon', serif;*/
+
+/*font-family: 'Slabo 27px', serif;*/
+/*font-family: 'Indie Flower', cursive;*/
+/*font-family: 'Inconsolata';*/
 }
 
 

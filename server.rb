@@ -48,22 +48,23 @@ module Review
       redirect to("/reviews")
     end
 
-    # delete '/reviews/r/:restaurant' do
-    #   restaurant = params[:restaurant].downcase
-    #   ids = $redis.lrange("review_ids", 0, -1).reverse
-    #   rest_id = ids.select do |id|
-    #     if $redis.hget("review:#{id}", "restaurant") == params[:restaurant]
-    #     $redis.del("review:#{rest_id[0]}")
-    #     end
-    #   end
-    #   redirect('/reviews')
-    # end
+    delete '/reviews/r/:restaurant' do
+      restaurant = params[:restaurant]
+      ids = $redis.lrange("review_ids", 0, -1).reverse
+      rest_id = ids.select do |id|
+        if $redis.hget("review:#{id}", "restaurant") == params[:restaurant]
+        $redis.del("review:#{@restaurant_id}")
+        end
+      end
+      redirect('/reviews')
+    end
 
 
 # new review page specific to restaurant
     get('/reviews/r/:restaurant') do
       ids = $redis.lrange("review_ids", 0, -1).reverse
       @restaurant = []
+      @restaruant_id = params[:restaurant]
       ids.each do |id|
         if $redis.hget("review:#{id}", "restaurant") == params[:restaurant]
           @restaurant.push($redis.hgetall("review:#{id}"))

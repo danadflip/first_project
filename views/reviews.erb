@@ -13,14 +13,14 @@
 
         <div class="user-info">
             <p>Reviewer Name: <a href="/reviews/u/<%= review["user_name"]%>"><%= review["user_name"]%></a></p>
-            <p>Review: <%= review["review"] %> </p>
+            <p>Review:<br><%= review["review"] %> </p>
             <p>Date Visited: <%= review["res_date"] %> </p>
         </div>
 
         <div class="rating">Rating:
         <ul class="ratings">
             <li>Quality (out of 5): <a href="/reviews/q/<%= review["quality"]%>"><%= review["quality"]%></a></li>
-            <li>Atmosphere (out of 5): <%= review["atmosphere"] %> </li>
+            <li><strong>Atmosphere (out of 5):</strong> <%= review["atmosphere"] %> </li>
             <li>Service (out of 5): <%= review["service"] %> </li>
             <li>Price: <a href="/reviews/p/<%= review["price"]%>"><%= review["price"]%></a></li>
         </ul>

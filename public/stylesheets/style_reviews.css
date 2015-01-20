@@ -48,3 +48,97 @@ a:hover{
   color: red;
   text-decoration: none;
 }
+
+
+
+
+html, body {
+  min-height: 100%;
+
+}
+
+header{
+  position:fixed;
+  background-color: #696969;
+  height:10%;
+  width:100%;
+
+}
+
+footer{
+  background-color: #696969;
+  height:50px;
+  width:100%;
+
+  font-size: 150%;
+}
+
+
+
+.form div {
+  /*vertical-align: top;*/
+  display: block;
+  left: 500px;
+  right: 200px;
+
+}
+
+.review li{
+  left: 100px;
+}
+
+.ratings{
+  text-decoration: none;
+  display: inline-block;
+  padding: 35px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+  text-decoration: none;
+}
+
+p{
+  color: black;
+}
+
+img{
+    /*margin: 40px 0px 0px 0px;*/
+    max-height: 400px;
+    border: 7px solid white;
+    border-radius: 20px;
+    position: center
+}
+
+
+ul{
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    position: center;
+    display: inline block;
+    text-decoration: none
+}
+
+.ratings ul{
+  display: inline block
+}
+
+/*ul{
+  position:relative;
+  left:900px;
+  z-index:6;
+  color:white;
+}*/
+
+
+
+
+<!--delete button-->
+<!-- <form method="post" action="/reviews/r/<%= @review["rest_id[0]"] %>">
+        <input type="hidden" name="_method" value="delete">
+        <input type="submit" value="Delete">
+      </form> -->
