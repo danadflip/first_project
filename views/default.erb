@@ -8,40 +8,51 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Gloria+Hallelujah|Playball|Dancing+Script:400,700|Shadows+Into+Light+Two|Chewy|Playfair+Display+SC:700,900,400|Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Cabin:400,600|Ubuntu|Kreon|Gloria+Hallelujah|Slabo+27px|Indie+Flower|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
   <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" media="all">
   <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
-  <header>
-    <h1>Students Like Food Too!</h1>
-     <!--  <a href="/">Reviews</a>
-      <a href=""> * </a>
-      <a href="/reviews/new">Add New Review!</a> -->
-
-  </header>
-
-<!--   <nav>
-    <ul class="menu">
-      <li><a href="/reviews">Reviews</a></li>
-      <li><a href="/reviews/new">Add New Review</a></li>
-
-    </ul>
-  </nav> -->
 <!--   <header>
-    <a href="/reviews"><h1>Reviews</h1></a>
-    <a href="/reviews/new">Add New Review!</a>
-    <a href="/">Home</a>
+    <h1>Students Like Food Too!</h1>
+
+
   </header> -->
+
+  <nav>
+
+    <div class = "logo">
+      <h1 class = "logo2">Students Like Food Too!</h1>
+    </div>
+
+    <div class="logo">
+      <ul class = "menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/reviews">Reviews</a></li>
+        <li><a href="/reviews/new">Add New Review</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
 
   <%= yield %>
 
 
   <footer>
-    <a href="/">Reviews</a>
-    <a href="/reviews/new">Add New Review!</a>
+    <ul class="footer">
+    <li><a href="/">Home</a></li>
+    <li><a href="/">Reviews</a></li>
+    <li><a href="/reviews/new">Add New Review!</a></li>
   </footer>
 
 </body>

@@ -1,17 +1,78 @@
 html{
   background-color: rgba(0,0,0,0.5);
 }
+  /* ========================= */
+  /* Navagation Bar */
+  /* ========================= */
 
-header{
-  background-color: white;
+nav{
+  position: relative;
+  background-color: #A9262A;
+  /*background-color: #B22222;*/
   height:10%;
   width:100%;
+  margin: 0 auto;
+  top: 0;
 }
 
+
+.logo{
+  display: inline-block;
+  width: 49%;
+
+}
+
+.logo2{
+  margin-left: 1.5em;
+}
+.menu{
+ /* position: relative;
+  right: 10px;*/
+   margin-left: 7em;
+  margin-top: 1em;
+  color:white;
+}
+
+.menu li{
+  display: inline-block;
+  padding:1em;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.menu a{
+  color: white
+}
+
+.menu a:hover{
+  color: black;
+  font-weight: bolder;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Covered By Your Grace', cursive;*/
+  color:white;
+}
+
+  /* ========================= */
+  /*  Footer */
+  /* ========================= */
+
 footer{
-  background-color: white;
-  height:40px;
-  width:100%;
+  background-color: #B22222;
+  height:10%;
+
+}
+
+.footer li{
+  display: inline-block;
+  padding:.5em;
+  text-decoration: none;
+  font-size: 19px;
+}
+.footer a{
+  color:white;
 }
 
 
@@ -63,7 +124,7 @@ a:hover{
   text-decoration: none;
 }
 
-div{
+.form div{
     background: rgba(204,204,204,0.6);
     text-decoration: none;
 }

@@ -1,60 +1,163 @@
-html{
-  background-color: rgba(0,0,0,0.5);
+html, body{
+  /*background-color: rgba(0,0,0,0.5);*/
+  background-color: #808080;
+  min-height: 100%;
+
 }
 
-/*header{
-  background-color: #696969;
+  /* ========================= */
+  /* Navagation Bar */
+  /* ========================= */
+
+nav{
+  position: relative;
+  /*background-color: #B22222;*/
+  background-color: #A9262A;
   height:10%;
   width:100%;
-}*/
+  margin: 0 auto;
+  top: 0;
+}
+
+
+.logo{
+  display: inline-block;
+  width: 49%;
+
+}
+
+.logo2{
+  margin-left: 1.5em;
+}
+.menu{
+ /* position: relative;
+  right: 10px;*/
+   margin-left: 7em;
+  margin-top: 1em;
+  color:white;
+}
+
+.menu li{
+  display: inline-block;
+  padding:1em;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.menu a{
+  color: white
+}
+
+.menu a:hover{
+  color: black;
+  font-weight: bolder;
+}
+
+  /* ========================= */
+  /*  Footer */
+  /* ========================= */
+
+footer{
+  background-color: #B22222;
+  height:10%;
+
+}
+
+.footer li{
+  display: inline-block;
+  padding:.5em;
+  text-decoration: none;
+  font-size: 19px;
+}
+.footer a{
+  color:white;
+}
+
+
+  /* =========== */
+  /* Reviews*/
+  /* =========== */
+
+
 
 .review{
   display: block;
-
   width: 650px;
-
-  /*-webkit-box-shadow: 0px 0px 0px 12px rgba(204,204,204,0.6);
-  -moz-box-shadow:    0px 0px 0px 12px rgba(204,204,204,0.6);*/
-  box-shadow:         0px 0px 0px 12px white;
-  /*border: 1px solid #999;*/
+  box-shadow: 0 0 0 12px white;
   border: 1px solid #999;
-
   margin: 80px auto 60px;
   padding: 18px 10px;
-
   color: black;
   font-weight: 800;
-
   position: relative;
-
   text-align: left;
+  /*background-color: #C0C0C0;*/
+  background-color: #BFBEBE;
 }
 
 img{
-    /*margin: 40px 0px 0px 0px;*/
-    max-height: 400px;
-    border: 7px solid white;
-    border-radius: 20px;
-    position: relative;
-    margin: 10px;
+  /*margin: 40px 0px 0px 0px;*/
+  max-height: 400px;
+  border: 7px solid white;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px;
 }
 
 a {
-  color: white;
+  /*color: white;*/
+  color:#B22222;
   text-decoration: none;
   padding: 10px;
 }
 a:hover{
-  color: white;
+  color: #B22222;
   text-decoration: underline;
 }
 
 h1{
-  font-family: 'Covered By Your Grace', cursive;
+  /*font-family: 'Montserrat', sans-serif;*/
+  /*font-family: 'Covered By Your Grace', cursive;*/
+
+  /*font-family: 'Shadows Into Light', cursive;*/
+  /*font-family: 'Gloria Hallelujah', cursive;*/
+  font-family: 'Shadows Into Light Two', cursive;
+
+  /*font-family: 'Chewy', cursive;*/
+
+  color:white;
 }
 
 h3{
   text-align: center;
-  font-family: 'Covered By Your Grace', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
   font-size: 250%;
+  color: black;
+}
+
+p{
+  /*font-family: 'Raleway', sans-serif;*/
+  /*font-family: 'Droid Serif', serif;*/
+
+/*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Cabin', sans-serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*font-family: 'Kreon', serif;*/
+
+/*font-family: 'Slabo 27px', serif;*/
+/*font-family: 'Indie Flower', cursive;*/
+font-family: 'Inconsolata';
+
+}
+
+h2{
+
+/*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Cabin', sans-serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*font-family: 'Kreon', serif;*/
+
+/*font-family: 'Slabo 27px', serif;*/
+/*font-family: 'Indie Flower', cursive;*/
+font-family: 'Inconsolata';
 }

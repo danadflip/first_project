@@ -1,5 +1,7 @@
 # Students Like Food Too! - Project 1
 
+![:image](http://restaurants.thebusinessrank.com/wp-content/uploads/2014/09/resasss.jpg)
+
 
 ## Project Idea:
 - Create a blog where different users can post reviews of restaurants.  These posts contain written reviews, ratings based on quality, price, atmosphere, and service.  They feature a section where the reviewer can write the deals of the restaurant.
@@ -15,5 +17,17 @@
 - I can delete a review on the individual restaurant page
 
 
+##APIs and Gems:
+- Redis Gem - used to access the Redis database to store information
+- Sinatra Gem - used to build the framework of the application
+- Sinatra/Reloader Gem - used to create new changes to files
+- Google Fonts - used to access more interesting fonts
 
+
+##How to Run Application Locally:
+
+- Run git clone
+/code
+$ git clone git@github.com:sarahmcalear/project_one.git
+$ cd project_one
 
