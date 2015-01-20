@@ -28,6 +28,10 @@
 
 - Run git clone
 
-`$ git clone git@github.com:danadflip/project_one.git
-$ cd project_one`
+`$ git clone git@github.com:danadflip/first_project.git`
+`$ cd project_one`
+
+- Run Redis-Server & Rackup
+
+- Open LocalHost in browser
 
