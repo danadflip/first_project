@@ -19,7 +19,6 @@ nav{
 .logo{
   display: inline-block;
   width: 49%;
-
 }
 
 .logo2{
@@ -88,7 +87,6 @@ width: 650px;
   /*-webkit-box-shadow: 0px 0px 0px 12px rgba(204,204,204,0.6);
   -moz-box-shadow:    0px 0px 0px 12px rgba(204,204,204,0.6);*/
   box-shadow:         0px 0px 0px 12px white;
-  /*border: 1px solid #999;*/
   border: 1px solid #999;
 
   margin: 80px auto 60px;

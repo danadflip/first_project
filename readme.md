@@ -1,7 +1,7 @@
 # Foodie on a Budget! - Project 1
 
 ![:image](http://restaurants.thebusinessrank.com/wp-content/uploads/2014/09/resasss.jpg)
-
+(Copyright © Restaurant Ginger)
 
 ## Project Idea:
 Create a blog where different users can post reviews of restaurants.  These posts contain written reviews, ratings based on quality, price, atmosphere, and service.  They feature a section where the reviewer can write the deals of the restaurant.
